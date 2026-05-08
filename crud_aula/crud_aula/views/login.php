@@ -7,6 +7,14 @@
 </head>
 <body>
     <h1> Login </h1>
+
+    <?php if (!empty($_SESSION["erro_login"])):?>
+        <p> <?php echo $_SESSION["erro_login"];?> </p>
+        <?php unset($_SESSION["erro_login"])?>
+        <?php endif;?>
+
+
+
     <form action="index.php?action=facaLogin" method="POST">
         E-mail:
         <input type="text" name="email">
