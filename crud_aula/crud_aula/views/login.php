@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Login </h1>
-    <form action="iindex.php?action=facaLogin" method="POST">
+    <form action="index.php?action=facaLogin" method="POST">
         E-mail:
         <input type="text" name="email">
         Senha:

@@ -29,8 +29,14 @@ class LoginController {
 }
     }
 
-    function mostrarlogin (){
+    public function mostrarlogin (){
         require "views/login.php";
+    }
+    public function deslogar (){
+        session_destroy();
+        header ("location: index.php?action=mostrarLogin");
+        exit;
+
     }
 }
 ?>
